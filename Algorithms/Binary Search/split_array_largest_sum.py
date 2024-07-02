@@ -3,6 +3,8 @@ def condition(mid, arr, m):
     index = 0
     parts = 0
     while index < len(arr):
+        if arr[index] > mid:
+            return False
         if curr + arr[index] > mid:
             parts += 1
             curr = 0
